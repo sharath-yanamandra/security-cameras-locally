@@ -1,0 +1,15 @@
+{
+    "models": {
+        "object_detector": "yolo11l.pt",
+        "pose_estimator": "yolo11l-pose.pt"
+    },
+    "storage": {
+        "snapshots": "./storage/snapshots",
+        "video_clips": "./storage/video_clips"
+    },
+    "zones_config": "./zones.json",
+    "rules_config": "./rules.json",
+    "frame_skip": 2,
+    "display": true,
+    "confidence_threshold": 0.3
+}

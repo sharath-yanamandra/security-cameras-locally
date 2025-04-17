@@ -1,0 +1,76 @@
+[
+    {
+        "id": "sitting_on_stairs",
+        "name": "Person Sitting on Stairs",
+        "type": "pose",
+        "camera_ids": ["entry"],
+        "zone_ids": ["entry_stairs"],
+        "object_types": ["person"],
+        "poses": ["sitting"],
+        "min_confidence": 0.6,
+        "severity": "medium",
+        "message": "Person detected sitting on entry stairs"
+    },
+    {
+        "id": "entry_stairs_sitting",
+        "name": "Person Sitting on Stairs",
+        "type": "pose",
+        "camera_ids": ["entry"],
+        "zone_ids": ["entry_stairs"],
+        "object_types": ["person"],
+        "poses": ["sitting"],
+        "min_confidence": 0.6,
+        "severity": "medium",
+        "message": "Person detected sitting on entry stairs"
+    },
+    {
+        "id": "entry_gathering",
+        "name": "Group Gathering at Entry",
+        "type": "count",
+        "camera_ids": ["entry"],
+        "zone_ids": ["entry_gate"],
+        "object_types": ["person"],
+        "max_count": 5,
+        "min_confidence": 0.6,
+        "severity": "low",
+        "message": "Large group gathering detected at entry"
+    },
+    {
+        "id": "reception_crowding",
+        "name": "Reception Area Crowding",
+        "type": "count",
+        "camera_ids": ["reception"],
+        "zone_ids": ["reception_waiting"],
+        "object_types": ["person"],
+        "max_count": 10,
+        "min_confidence": 0.6,
+        "severity": "medium",
+        "message": "More than 10 people in reception area"
+    },
+    {
+        "id": "unauthorized_dc_access",
+        "name": "Unauthorized Access to Datacenter",
+        "type": "count",
+        "camera_ids": ["datacenter_entry"],
+        "zone_ids": ["dc_entry_door"],
+        "object_types": ["person"],
+        "min_count": 1,
+        "min_confidence": 0.8,
+        "severity": "high",
+        "message": "Unauthorized access to datacenter detected",
+        "rule_type": "unauthorized_access"
+    },
+    {
+        "id": "person_detection",
+        "name": "Person Detection (Any Area)",
+        "type": "count",
+        "camera_ids": ["entry", "reception", "datacenter_entry", "datacenter_inside", "parking"],
+        "zone_ids": [],
+        "apply_all_zones": true,
+        "object_types": ["person"],
+        "min_count": 1,
+        "min_confidence": 0.5,
+        "severity": "low",
+        "message": "Person detected in monitored area"
+    }
+]

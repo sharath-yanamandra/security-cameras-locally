@@ -1,0 +1,78 @@
+{
+    "entry": {
+        "zones": [
+            {
+                "id": "entry_stairs",
+                "name": "Entry Stairs",
+                "type": "restricted",
+                "polygon": [
+                    [50, 100], [500, 100], [500, 400], [50, 400]
+                ]
+            },
+            {
+                "id": "entry_gate",
+                "name": "Entry Gate",
+                "type": "monitored",
+                "polygon": [
+                    [550, 100], [800, 100], [800, 400], [550, 400]
+                ]
+            }
+        ]
+    },
+    "reception": {
+        "zones": [
+            {
+                "id": "reception_desk",
+                "name": "Reception Desk",
+                "type": "staff_zone",
+                "polygon": [
+                    [200, 100], [400, 100], [400, 300], [200, 300]
+                ]
+            },
+            {
+                "id": "reception_waiting",
+                "name": "Reception Waiting Area",
+                "type": "public_zone",
+                "polygon": [
+                    [450, 100], [750, 100], [750, 300], [450, 300]
+                ]
+            }
+        ]
+    },
+    "datacenter_entry": {
+        "zones": [
+            {
+                "id": "dc_entry_door",
+                "name": "Datacenter Entry Door",
+                "type": "secured_zone",
+                "polygon": [
+                    [300, 200], [400, 200], [400, 300], [300, 300]
+                ]
+            }
+        ]
+    },
+    "datacenter_inside": {
+        "zones": [
+            {
+                "id": "server_area",
+                "name": "Server Area",
+                "type": "restricted_zone",
+                "polygon": [
+                    [200, 100], [600, 100], [600, 400], [200, 400]
+                ]
+            }
+        ]
+    },
+    "parking": {
+        "zones": [
+            {
+                "id": "parking_spots",
+                "name": "Regular Parking Spots",
+                "type": "parking_zone",
+                "polygon": [
+                    [100, 100], [600, 100], [600, 400], [100, 400]
+                ]
+            }
+        ]
+    }
+}
